@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Atributos CSS</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#tabla">Tabla de Atributos CSS</a></li>
+        </ul>
+    </nav>
+    
+    <section id="css">
+        <h2>¿Qué es CSS?</h2>
+        <p>CSS son las siglas de Cascading Style Sheets . Es un lenguaje de diseño gráfico que se 
+            utiliza para describir la presentación de un documento escrito en un lenguaje de marcado, 
+            como HTML o XML.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+            <img src="CSS-Logo.png" alt="Logo de CSS" width="300">
+        </a>
+    </section>
+    
+    <section id="javascript">
+        <h2>¿Por qué JavaScript es importante?</h2>
+        <p>En el panorama actual del desarrollo web, JavaScript es prácticamente indispensable para crear 
+            experiencias de usuario ricas y funcionales.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+            <img src="JavaScript-logo.png" alt="Logo de JavaScript" width="300">
+        </a>
+    </section>
+    
+    <section id="tabla">
+        <h2>Tabla de Atributos CSS</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Valores Posibles</th>
+                <th>Ejemplo de Uso</th>
+                <th>Imagen</th>
+                <th>Fuente</th>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Define el tamaño de la fuente del texto de un elemento.</td>
+                <td>px (pixeles), pt (puntos), cm (centimetros), mm (milimetros), in (pulgadas).</td>
+                <td><code> h1 {font-size: 2.5em; }</code></td>
+                <td><img src="i1.PNG" alt="Ejemplo de font-size"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">FSE</a></td>
+            </tr>
+            <tr>
+                <td>border-radius</td>
+                <td>Define el radio de las esquinas de un elemento, creando bordes redondeados.</td>
+                <td><P>Un valor: Aplica el mismo radio a las cuatro esquinas (ej: 10px).</P>
+                <P>Dos valores: El primero aplica a las esquinas superior izquierda e inferior derecha, 
+                    el segundo a la superior derecha e inferior izquierda (ej: 10px 5px).</P>
+                <P>Tres valores: El primero aplica a la esquina superior izquierda, el segundo a las esquinas superior derecha 
+                    e inferior izquierda, y el tercero a la esquina inferior derecha1 (ej: 10px 5px 20px).</P></td>
+                <td><code>oval {border-radius: 50%; }</code></td>
+                <td><img src="i2.PNG" alt="ejemplo border-radius"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">BRS</a></td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>Especifica el tipo de caja utilizada para un elemento HTML, 
+                    lo que influye en su comportamiento en el flujo del documento.</td>
+                <td><P>block: El elemento ocupa todo el ancho disponible y comienza en una nueva línea.</P>
+                    <P>inline: El elemento solo ocupa el espacio necesario para su contenido y no fuerza saltos de línea.</P>
+                    <P>inline-block: El elemento fluye como inline pero permite establecer propiedades de block como width y height.</P>
+                    <P>flex: Activa el contexto de formato flexbox para el diseño unidimensional.</P>
+                    <P>grid: Activa el contexto de formato grid para el diseño bidimensional.</P>
+                    <P>none: El elemento se elimina del flujo del documento y no se muestra.</P></td>
+                <td><code>li {display: inline;}</code></td>
+                <td><img src="i3.PNG" alt="ejemplo de display"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">DPY</a></td>
+            </tr>
+            <tr>
+                <td>flexbox</td>
+                <td>Al establecer display: flex; en un contenedor, se activa el módulo de diseño Flexible Box. 
+                    Esto permite una distribución y alineación eficiente de los elementos hijos (flex items) 
+                    dentro del contenedor, incluso cuando su tamaño es desconocido o dinámico.</td>
+                <td><P>flex (para activar el flex container).</P>
+                <P>Propiedades relacionadas (para el contenedor flex): flex-direction, flex-wrap, flex-flow,
+                     justify-content, align-items, align-content.</P>
+                <P>Propiedades relacionadas (para los flex items): order, flex-grow, flex-shrink, flex-basis, 
+                    flex, align-self.</P></td>
+                <td><code>.nav-bar {
+                    display: flex;
+                    justify-content: space-between; 
+                    align-items: center;}
+                  </code></td>
+                <td><img src="i4.PNG" alt="ejemplo de flexbox"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout" target="_blank">FBX</a></td>
+            </tr>
+            <tr>
+                <td>position</td>
+                <td>Especifica el método de posicionamiento utilizado para un elemento, afectando cómo se 
+                    coloca en el documento y cómo interactúa con otros elementos.</td>
+                <td><P>static: Valor por defecto. El elemento se posiciona según el flujo normal del documento.</P>
+                <P>relative: El elemento se posiciona según el flujo normal, pero se puede desplazar (top, right, bottom, left) 
+                    respecto a su posición original sin afectar el espacio de los demás elementos.</P></td>
+                <td><code>.absolute {
+                    position: absolute;
+                    top: 50px;
+                    right: 0;}</code></td>
+                <td><img src="i5.PNG" alt="ejemplo de position"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">PSN</a></td>
+            </tr>
+            <tr>
+                <td>box-shadow</td>
+                <td>Añade efectos de sombra alrededor del marco de un elemento.</td>
+                <td><P>offset-x: Desplazamiento horizontal (positivo a la derecha, negativo a la izquierda).</P>
+                <P>offset-y: Desplazamiento vertical (positivo hacia abajo, negativo hacia arriba).</P>
+                <P>blur-radius (opcional): Desenfoque de la sombra.</P>
+                <P>spread-radius (opcional): Extensión de la sombra.</P>
+                <P>color (opcional): Color de la sombra.</P>
+                <P>inset (opcional): Si se incluye, la sombra se dibuja dentro del elemento.</P></td>   
+                <td><code>.card {box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);}</code></td>
+                <td><img src="i6.PNG" alt="ejemplo de box-shadow"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank">BXS</a></td>
+            </tr>
+            <tr>
+                <td>overflow</td>
+                <td> Especifica qué sucede si el contenido de un elemento desborda su área de contenido.</td>
+                <td><P>visible: El contenido desbordado se muestra fuera del área del elemento (valor por defecto).</P>
+                <P>hidden: El contenido desbordado se recorta y no se muestra.</P>
+                <P>scroll: Se añaden barras de desplazamiento (horizontal y vertical si es necesario) para ver todo el contenido.</P>
+                <P>auto: El navegador añade barras de desplazamiento solo cuando el contenido desborda.</P></td>
+                <td><code>.scrollable {
+                    width: 200px;
+                    height: 150px;
+                    overflow: scroll; 
+                  }</code></td>
+                <td><img src="i7.PNG" alt="ejemplo overflow"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">OVW</a></td>
+            </tr>
+            <tr>
+                <td>z-index</td>
+                <td>Especifica el orden de apilamiento de un elemento posicionado (con position diferente de static). 
+                    Elementos con un valor de z-index mayor se muestran frente a elementos con un valor menor.</td>
+                <td>Cualquier valor entero (positivo, negativo o cero).
+                    Nota: z-index solo funciona en elementos con una propiedad position establecida en relative, 
+                    absolute, fixed, o sticky.</td>
+                <td><code>.overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 10;
+                  }</code></td>
+                <td><img src="i8.PNG" alt="ejemplo z-index"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">Z-IX</a></td>
+            </tr>
+            <tr>
+                <td>opacity</td>
+                <td>Define la transparencia de un elemento. Un valor de 0 hace que el elemento sea completamente 
+                    transparente, mientras que 1 lo hace completamente opaco.</td>
+                <td>Aplican en orden a las esquinas superior izquierda, 
+                    superior derecha, inferior derecha e inferior izquierda (ej: 10px 5px 20px 2px).</td>
+                <td><code>.transparent-box {
+                    opacity: 0.7;
+                  }</code></td>
+                <td><img src="i9.PNG" alt="ejemplo de opacity"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" target="_blank">OPY</a></td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Define el espacio alrededor de un elemento, fuera de cualquier borde definido. 
+                    Se utiliza para controlar la separación entre elementos.</td>
+                <td><P>Un valor: Aplica el mismo margen a los cuatro lados (ej: 10px).</P>
+                <P>Dos valores: El primero aplica a los márgenes superior e inferior, el segundo a los márgenes 
+                    izquierdo y derecho (ej: 10px 20px).</P>
+                <P>Tres valores: El primero aplica al margen superior, el segundo a los márgenes izquierdo y derecho, 
+                    y el tercero al margen inferior (ej: 10px 20px 5px).</P>
+                <P>Cuatro valores: Aplican en orden a los márgenes superior, derecho, inferior e izquierdo (ej: 10px 20px 5px 15px).</P></td>
+                <td><code>p {
+                    margin-bottom: 15px;
+                  }</code></td>
+                <td><img src="i10.PNG" alt="ejemplo margin"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">MGN</a></td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Define el espacio entre el contenido de un elemento y su borde. 
+                    Se utiliza para crear espacio interno dentro del elemento.</td>
+                <td><P>Un valor: Aplica el mismo relleno a los cuatro lados (ej: 10px).</P>
+                <P>Dos valores: El primero aplica al relleno superior e inferior, 
+                    el segundo al relleno izquierdo y derecho (ej: 10px 20px).</P>
+                <P>Tres valores: El primero aplica al relleno superior, el segundo al relleno izquierdo y derecho, 
+                    y el tercero al relleno inferior (ej: 10px 20px 5px).</P>
+                <P>Cuatro valores: Aplican en orden al relleno superior, derecho, inferior e izquierdo (ej: 10px 20px 5px 15px).</P></td>
+                <td><code>.button {
+                    padding: 10px 20px;
+                  }</code></td>
+                <td><img src="i11.PNG" alt="ejemplo de padding"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">PDG</a></td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Define el color de fondo de un elemento.</td>
+                <td>Los mismos valores de color que la propiedad color (nombres de colores, hexadecimales,
+                     RGB, RGBA, HSL, HSLA). También puede tomar el valor transparent.</td>
+                <td><code>body {
+                    background-color: #f0f0f0; 
+                  }</code></td>
+                <td><img src="i12.PNG" alt="Ejemplo de background-color"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">BGC</a></td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>Define la alineación horizontal del texto dentro de un elemento de bloque o celda de tabla.</td>
+                <td><P>left: Alinea el texto a la izquierda (valor por defecto para la mayoría de los elementos).</P>
+                <P>right: Alinea el texto a la derecha.</P>
+                <P>center: Centra el texto horizontalmente.</P></td>
+                <td><code>p.right-aligned {
+                    text-align: right; 
+                  }</code></td>
+                <td><img src="i13.PNG" alt="Ejemplo de text-align"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">TXA</a></td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Define el ancho del área de contenido de un elemento. El área de contenido es la parte interior del 
+                    elemento donde se muestran su contenido, excluyendo el relleno, el borde y el margen.</td>
+                <td>Valores de longitud: px (píxeles), em, rem, vw (ancho del viewport), vh (alto del viewport), 
+                    % (porcentaje del ancho del elemento padre), etc.</td>
+                <td><code>img {
+                    width: 100%; 
+                    height: auto; 
+                  }</code></td>
+                <td><img src="i14.PNG" alt="Ejemplo de width"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" target="_blank">WTH</a></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tabla CSS - Creado por Edison Felipe Amado Castro</p>
+        <p>Más información en <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN Web Docs</a></p>
+    </footer>
+</body>
+</html>

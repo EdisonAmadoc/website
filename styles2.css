@@ -1,0 +1,99 @@
+/* ====== CONFIGURACIÓN BÁSICA ====== */
+/* Resetea los márgenes y el padding de todos los elementos para evitar inconsistencias entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Establece una fuente estándar para toda la página */
+}
+
+/* ====== ESTILO GENERAL DEL CUERPO ====== */
+/* Define un fondo con un degradado y color de texto predeterminado */
+body {
+    background: linear-gradient(to right, #c9caca, #6891b9); /* Degradado de gris a azul */
+    color: #0a0a0a; /* Color de texto oscuro */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+/* Configura el fondo, alineación y sombra del menú de navegación */
+nav {
+    background: #f36eac; /* Color de fondo rosa */
+    padding: 15px 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Centra los elementos */
+    box-shadow: 0 4px 6px rgb(231, 194, 83); /* Sombra dorada para dar relieve */
+}
+
+/* Elimina los estilos de lista predeterminados */
+nav ul {
+    list-style: none;
+}
+
+/* Los elementos del menú se muestran en línea con espaciado */
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Estiliza los enlaces del menú */
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Texto en color blanco */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    transition: all 0.3s ease; /* Transición suave en hover */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces del menú */
+nav ul li a:hover {
+    color: #ffcc00; /* Cambio de color a amarillo */
+    text-decoration: underline; /* Subrayado */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* ====== SECCIONES ====== */
+/* Define el estilo de cada sección de contenido */
+section {
+    background: rgb(248, 247, 247); /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    margin: 30px 0; /* Espaciado superior e inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(212, 247, 87, 0.1); /* Sombra sutil */
+    transition: transform 0.3s; /* Animación suave */
+}
+
+/* Efecto de elevación cuando el usuario pasa el cursor sobre una sección */
+section:hover {
+    transform: translateY(-5px); /* Desplaza ligeramente la sección hacia arriba */
+}
+
+/* ====== TABLA ESTILIZADA ====== */
+table {
+    width: 100%; /* La tabla ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin-top: 20px; /* Espaciado superior */
+    background: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que los bordes sobresalgan */
+    box-shadow: 0 4px 8px rgba(201, 241, 55, 0.452); /* Sombra verde */
+    border: 2px solid #aaa; /* Borde externo de la tabla */
+}
+
+/* Bordes en las celdas de la tabla */
+th, td {
+    padding: 15px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+    border: 2px solid #aaa; /* Borde gris claro en las celdas */
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background: #d0e22f; /* Fondo amarillo */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+}
+
+/* Alterna el color de fondo en filas pares para mejorar la lectura */
+tr:nth-child(even) td {
+    background: #e9ecef; 
+}
